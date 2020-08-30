@@ -1,0 +1,33 @@
+<div class="main-view-container">
+
+  <div class="enlaces-superiores">
+    <a href="/nuevoIngreso/{{vehiculo._id}}" class="enlace">Nuevo ingreso</a>
+    <a href="/infoVehiculo/{{vehiculo._id}}" class="enlace">Información basica del vehiculo</a>
+  </div>
+
+  {{#if ingresosVehiculo}}
+  <div class="contenedor-tabla">
+    <table>
+      <caption>
+        <p>Ingresos del vehículo {{vehiculo.matricula}}</p>
+      </caption>
+      {{#each ingresosVehiculo}}
+      <tr>
+        <td>
+          <p>Fecha de ingreso: {{fechaEntrada}}</p>
+        </td>
+        <td class="valor-sintomas">
+          <p>Síntomas: {{sintomas}}</p>
+        </td>
+        <td class="td-consulta">
+          <a href="/infoIngreso/{{_id}}">
+            Consultar
+          </a>
+        </td>
+      </tr>
+      {{/each}}
+    </table>
+  </div>
+  {{/if}}
+
+</div>

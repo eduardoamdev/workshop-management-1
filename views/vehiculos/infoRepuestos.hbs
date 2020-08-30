@@ -1,0 +1,41 @@
+<div class="main-view-container">
+
+  <div class="enlaces-superiores">
+    <a href="/nuevoRepuesto/{{ingreso._id}}" class="enlace">Nuevo repuesto</a>
+    <a href="/infoIngreso/{{ingreso._id}}" class="enlace">Información del ingreso</a>
+  </div>
+
+  {{#if repuestos}}
+  <div class="contenedor-tabla">
+    <table>
+      <caption>
+        <p>Repuestos del ingreso con fecha de entrada: {{ingreso.fechaEntrada}}</p>
+      </caption>
+      {{#each repuestos}}
+      <tr>
+        <td class="td-repuesto-nombre">
+          <p>Nombre: {{nombre}}</p>
+        </td>
+        <td class="td-repuesto-fecha">
+          <p>Fecha de solicitud: {{fechaSolicitud}}</p>
+        </td>
+        <td class="td-repuesto-noc">
+          <p>NOC: {{noc}}</p>
+        </td>
+        <td class="td-consulta">
+          <a href="/actualizarRepuesto/{{_id}}">
+            Actualizar
+          </a>
+        </td>
+        <td class="td-eliminar">
+          <a href="/confirmacionBorradoRepuesto/{{_id}}">
+            Eliminar
+          </a>
+        </td>
+      </tr>
+      {{/each}}
+    </table>
+  </div>
+  {{/if}}
+
+</div>

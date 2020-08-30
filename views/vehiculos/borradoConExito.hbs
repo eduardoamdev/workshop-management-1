@@ -1,0 +1,37 @@
+<div class="main-view-container">
+
+  {{#if borradoDeVehiculo}}
+  <div class="contenedor-borrado-exito">
+    <div class="contenedor-texto">
+      <p>El vehículo ha sido eliminado con éxito.</p>
+    </div>
+  </div>
+  {{/if}}
+
+  {{#if vehiculo}}
+  <div class="contenedor-borrado-exito">
+    <div class="contenedor-texto">
+      <p>El ingreso ha sido eliminado con éxito.</p>
+    </div>
+    <div class="enlaces-inferiores">
+      <a href="/mostrarIngresos/{{vehiculo._id}}" class="enlace">
+        Ingresos del vehiculo {{vehiculo.matricula}}
+      </a>
+    </div>
+  </div>
+  {{/if}}
+
+  {{#if ingreso}}
+  <div class="contenedor-borrado-exito">
+    <div class="contenedor-texto">
+      <p>La tarea ha sido eliminada con éxito.</p>
+    </div>
+    <div class="enlaces-inferiores">
+      <a href="/mostrarTareas/{{ingreso._id}}" class="enlace">
+        Tareas del ingreso con fecha: {{ingreso.fechaEntrada}}
+      </a>
+    </div>
+  </div>
+  {{/if}}
+
+</div>

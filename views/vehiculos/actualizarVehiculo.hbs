@@ -1,0 +1,36 @@
+<div class="main-view-container">
+
+  <div class="enlaces-superiores">
+    <a href="/infoVehiculo/{{vehiculo._id}}" class="enlace">
+      Volver
+    </a>
+  </div>
+
+  <form action="/actualizarVehiculo/{{vehiculo._id}}" method="POST">
+
+    <label for="matricula">Matricula:</label>
+    <input type="text" name="matricula" value="{{vehiculo.matricula}}" placeholder="ET-00000/ET-000000">
+
+    <label for="tipo">Tipo de vehículo:</label>
+    <select name="tipo">
+      {{#each tiposVehiculos}}
+      <option value="{{nombre}}">{{nombre}}</option>
+      {{/each}}
+    </select>
+
+    <label for="unidad">Unidad:</label>
+    <select name="unidad">
+      {{#each unidadesVehiculos}}
+      <option value="{{nombre}}">{{nombre}}</option>
+      {{/each}}
+    </select>
+
+    <input type="submit" value="Actualizar vehículo">
+
+    {{#if message}}
+    <div class="error-message">{{message}}</div>
+    {{/if}}
+
+  </form>
+
+</div>

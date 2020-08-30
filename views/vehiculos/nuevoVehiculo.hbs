@@ -1,0 +1,30 @@
+<div class="main-view-container">
+
+  <form action="/altaVehiculo" method="POST" class="contenedor-alta-buscar">
+
+    <label for="matricula">Matricula:</label>
+    <input type="text" name="matricula" value="" placeholder="ET-000000">
+
+    <label for="tipo">Tipo de vehículo:</label>
+    <select name="tipo">
+      {{#each tiposVehiculos}}
+      <option value="{{nombre}}">{{nombre}}</option>
+      {{/each}}
+    </select>
+
+    <label for="unidad">Unidad:</label>
+    <select name="unidad">
+      {{#each unidadesVehiculos}}
+      <option value="{{nombre}}">{{nombre}}</option>
+      {{/each}}
+    </select>
+
+    <input type="submit" value="Añadir nuevo vehículo">
+
+    {{#if message}}
+    <div class="error-message">{{message}}</div>
+    {{/if}}
+
+  </form>
+
+</div>

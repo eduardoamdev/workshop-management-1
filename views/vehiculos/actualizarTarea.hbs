@@ -1,0 +1,25 @@
+<div class="main-view-container">
+
+  <div class="enlaces-superiores">
+    <a href="/infoTarea/{{tarea._id}}" class="enlace">
+      Volver
+    </a>
+  </div>
+
+  <form action="/actualizarTarea/{{tarea._id}}" method="POST">
+
+    <label for="descripcion">Descripción:</label>
+    <textarea rows="4" cols="60" name="descripcion" type="text" tabindex="0">{{tarea.descripcion}}</textarea>
+
+    <label for="sintomas">Síntomas:</label>
+    <textarea rows="8" cols="60" name="observaciones" type="text" tabindex="0">{{tarea.observaciones}}</textarea>
+
+    <input type="submit" value="Actualizar tarea">
+
+    {{#if message}}
+    <div class="error-message">{{message}}</div>
+    {{/if}}
+
+  </form>
+
+</div>

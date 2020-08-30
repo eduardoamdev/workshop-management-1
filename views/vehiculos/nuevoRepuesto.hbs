@@ -1,0 +1,28 @@
+<div class="main-view-container">
+
+  <div class="enlaces-superiores">
+    <a href="/mostrarRepuestos/{{idIngreso}}" class="enlace">
+      Volver
+    </a>
+  </div>
+
+  <form action="/nuevoRepuesto/{{idIngreso}}" method="POST">
+
+    <label for="nombre">Nombre:</label>
+    <input type="text" name="nombre" value="">
+
+    <label for="fecha">Fecha de solicitud:</label>
+    <input type="text" name="fecha" value="" placeholder="0000-00-00  año/mes/día">
+
+    <label for="noc">NOC:</label>
+    <input type="text" name="noc" value="" placeholder="0000-00-000-0000">
+
+    <input type="submit" value="Añadir nuevo repuesto">
+
+    {{#if message}}
+    <div class="error-message">{{message}}</div>
+    {{/if}}
+
+  </form>
+
+</div>

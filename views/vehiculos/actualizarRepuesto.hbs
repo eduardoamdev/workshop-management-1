@@ -1,0 +1,28 @@
+<div class="main-view-container">
+
+  <div class="enlaces-superiores">
+    <a href="/mostrarRepuestos/{{ingreso._id}}" class="enlace">
+      Volver
+    </a>
+  </div>
+
+  <form action="/actualizarRepuesto/{{repuesto._id}}" method="POST">
+
+    <label for="nombre">Nombre:</label>
+    <input type="text" name="nombre" value="{{repuesto.nombre}}">
+
+    <label for="fecha">Fecha de solicitud:</label>
+    <input type="text" name="fecha" value="{{repuesto.fechaSolicitud}}" placeholder="0000-00-00  año/mes/día">
+
+    <label for="noc">NOC:</label>
+    <input type="text" name="noc" value="{{repuesto.noc}}" placeholder="0000-00-000-0000">
+
+    <input type="submit" value="Actualizar repuesto">
+
+    {{#if message}}
+    <div class="error-message">{{message}}</div>
+    {{/if}}
+
+  </form>
+
+</div>

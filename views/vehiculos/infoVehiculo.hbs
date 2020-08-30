@@ -1,0 +1,47 @@
+<div class="main-view-container">
+
+  <div class="enlaces-superiores">
+    <a href="/actualizarVehiculo/{{vehiculo._id}}" class="enlace">
+      Actualizar información básica
+    </a>
+    <a href="/mostrarIngresos/{{vehiculo._id}}" class="enlace">
+      Consultar historial
+    </a>
+    <a href="/confirmarBorradoVehiculo/{{vehiculo._id}}" class="enlace-borrar">
+      Borrar vehículo
+    </a>
+  </div>
+
+  <div class="contenedor-tabla">
+    <table>
+      <caption>
+        <p>Información básica</p>
+      </caption>
+      <tr>
+        <td>
+          <p>Matrícula:</p>
+        </td>
+        <td>
+          <p>{{vehiculo.matricula}}</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>Tipo:</p>
+        </td>
+        <td>
+          <p>{{vehiculo.tipo}}</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>Unidad:</p>
+        </td>
+        <td>
+          <p>{{vehiculo.unidad}}</p>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+</div>

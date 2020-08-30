@@ -1,0 +1,25 @@
+<div class="main-view-container">
+
+  <div class="enlaces-superiores">
+    <a href="/mostrarTareas/{{idIngreso}}" class="enlace">
+      Volver
+    </a>
+  </div>
+
+  <form action="/nuevaTarea/{{idIngreso}}" method="POST">
+
+    <label for="descripcion">Descripición:</label>
+    <textarea rows="4" cols="60" name="descripcion" type="text"></textarea>
+
+    <label for="observaciones">Observaciones:</label>
+    <textarea rows="8" cols="60" name="observaciones" type="text"></textarea>
+
+    <input type="submit" value="Añadir nueva tarea">
+
+    {{#if message}}
+    <div class="error-message">{{message}}</div>
+    {{/if}}
+
+  </form>
+
+</div>

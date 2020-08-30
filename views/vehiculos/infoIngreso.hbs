@@ -1,0 +1,61 @@
+<div class="main-view-container">
+
+  <div class="enlaces-superiores">
+    <a href="/actualizarIngreso/{{ingreso._id}}" class="enlace">
+      Actualizar información básica
+    </a>
+    <a href="/mostrarTareas/{{ingreso._id}}" class="enlace">
+      Consultar tareas
+    </a>
+    <a href="/mostrarRepuestos/{{ingreso._id}}" class="enlace">
+      Consultar repuestos
+    </a>
+    <a href="/mostrarIngresos/{{vehiculo._id}}" class="enlace">
+      Ver todos los ingresos
+    </a>
+    <a href="/confirmacionBorradoIngreso/{{ingreso._id}}" class="enlace-borrar">
+      Borrar ingreso
+    </a>
+  </div>
+
+  <div class="contenedor-tabla">
+    <table>
+      <caption>
+        <p>Información básica del ingreso:</p>
+      </caption>
+      <tr>
+        <td>
+          <p>Fecha de entrada:</p>
+        </td>
+        <td>
+          <p class="valor-tabla">{{ingreso.fechaEntrada}}</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>Fecha de salida:</p>
+        </td>
+        <td>
+          <p class="valor-tabla">{{ingreso.fechaSalida}}</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>Orden de trabajo:</p>
+        </td>
+        <td>
+          <p class="valor-tabla">{{ingreso.orden}}</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>Síntomas:</p>
+        </td>
+        <td>
+          <p class="valor-tabla">{{ingreso.sintomas}}</p>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+</div>

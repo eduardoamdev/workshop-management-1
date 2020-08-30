@@ -1,0 +1,370 @@
+/************ Reset css. ***************/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/************ Estilos generales del documento. **************/
+
+html {
+  font-size: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: 658px) {
+
+  p {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
+
+}
+
+@media (max-width: 657px) {
+
+  p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-view-container {
+  width: 100%;
+  max-width: 1350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*************** Navegación. ***************/
+
+@media (min-width: 960px) {
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 3rem 7rem;
+    font-size: 1.6rem;
+    background: rgb(75, 83, 62);
+  }
+
+  nav a {
+    margin-left: 8rem;
+    color: rgb(192, 214, 187);
+    font-weight: bold;
+  }
+
+}
+
+@media (min-width: 658px) and (max-width: 959px) {
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+    font-size: 1.6rem;
+    background: rgb(75, 83, 62);
+  }
+
+  nav a {
+    color: rgb(192, 214, 187);
+    font-weight: bold;
+  }
+
+}
+
+@media (max-width: 657px) {
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+    font-size: 1.2rem;
+    background: rgb(75, 83, 62);
+  }
+
+  nav a {
+    color: rgb(192, 214, 187);
+    font-weight: bold;
+  }
+
+}
+
+/*************** Formularios. ****************/
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+label {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  margin-bottom: 3rem;
+  font-size: 1.6rem;
+  width: 100%;
+  width: 20rem;
+}
+
+select {
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
+  padding: 0.4rem 0.8rem;
+  width: 100%;
+}
+
+.error-message {
+  font-size: 1.6rem;
+  color: red;
+}
+
+.contenedor-alta-buscar {
+  margin-top: 12rem;
+}
+
+@media (min-width: 658px) {
+
+  textarea {
+    margin-bottom: 3rem;
+  }
+
+}
+
+@media (max-width: 657px) {
+
+  textarea {
+    margin-bottom: 3rem;
+    width: 100%;
+  }
+
+}
+
+/************ Tablas. *************/
+
+.contenedor-tabla {
+  margin-top: 10rem;
+}
+
+table {
+  margin-bottom: 2rem;
+}
+
+caption {
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+tr {
+  border: 2px solid black;
+}
+
+@media (min-width: 960px) {
+
+  .valor-sintomas {
+    width: 40rem;
+    max-width: 40rem;
+  }
+  
+  .valor-tabla {
+    width: 40rem;
+  }
+
+  .valor-tabla-largo {
+    width: 70rem;
+    max-width: 70rem;
+  }
+
+}
+
+@media (min-width: 658px) {
+
+  .td-consulta a {
+    font-size: 1.6rem;
+    color: blue;
+  }
+  
+  .td-eliminar a {
+    font-size: 1.6rem;
+    color: red;
+  }
+
+  td {
+    border: 2px solid black;
+    padding: 0.5rem 1rem;
+  }
+
+}
+
+@media (max-width: 657px) {
+
+  .td-consulta a {
+    font-size: 1.2rem;
+    color: blue;
+  }
+  
+  .td-eliminar a {
+    font-size: 1.2rem;
+    color: red;
+  }
+
+  td {
+    border: 2px solid black;
+    padding: 0.1rem 0.3rem;
+  }
+
+}
+
+.td-repuesto-nombre {
+  width: 35rem;
+  max-width: 35rem;
+}
+
+.td-repuesto-fecha {
+  width: 25rem;
+  max-width: 25rem;
+}
+
+.td-repuesto-noc {
+  width: 20rem;
+  max-width: 20rem;
+}
+
+/********** Enlaces. **********/
+
+.enlaces-superiores {
+ display: flex;
+ justify-content: space-around;
+ width: 100%;
+ margin-top: 5rem;
+}
+
+.enlaces-inferiores {
+  display: flex;
+  justify-content: space-around;
+  width: 30vw;
+  margin-top: 2rem;
+  margin-bottom: 10rem;
+ }
+
+@media (min-width: 960px) {
+
+  .enlace {
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    background: rgb(75, 83, 62);
+    color: rgb(192, 214, 187);
+    border: 2px solid black;
+    border-radius: 1rem;
+  }
+  
+  .enlace-borrar {
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    background: red;
+    color: rgb(192, 214, 187);
+    border: 2px solid black;
+    border-radius: 1rem;
+  }
+
+}
+
+@media (min-width: 658px) and (max-width: 959px) {
+
+  .enlace {
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 0.2rem 0.5rem;
+    color: rgb(75, 83, 62);
+  }
+  
+  .enlace-borrar {
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 0.2rem 0.5rem;
+    color: red;
+  }
+
+}
+
+@media (max-width: 657px) {
+
+  .enlace {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 0.2rem 0.5rem;
+    color: rgb(75, 83, 62);
+  }
+  
+  .enlace-borrar {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.2rem 0.5rem;
+    color: red;
+  }
+
+}
+
+/********** Textos sueltos. ***********/
+
+.contenedor-borrado-exito {
+  margin-bottom: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedor-texto {
+  margin-top: 20rem;
+}

@@ -1,0 +1,33 @@
+<div class="main-view-container">
+
+  <div class="enlaces-superiores">
+    <a href="/nuevaTarea/{{ingreso._id}}" class="enlace">Nueva tarea</a>
+    <a href="/infoIngreso/{{ingreso._id}}" class="enlace">Información del ingreso</a>
+  </div>
+
+  {{#if tareas}}
+  <div class="contenedor-tabla">
+    <table>
+      <caption>
+        <p>Tareas del ingreso con fecha de entrada: {{ingreso.fechaEntrada}}</p>
+      </caption>
+      {{#each tareas}}
+      <tr>
+        <td>
+          <p>Descripción:</p>
+        </td>
+        <td class="valor-sintomas">
+          <p>{{descripcion}}</p>
+        </td>
+        <td class="td-consulta">
+          <a href="/infoTarea/{{_id}}">
+            Consultar
+          </a>
+        </td>
+      </tr>
+      {{/each}}
+    </table>
+  </div>
+  {{/if}}
+
+</div>

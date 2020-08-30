@@ -1,0 +1,31 @@
+<div class="main-view-container">
+
+  <div class="enlaces-superiores">
+    <a href="/infoIngreso/{{ingreso._id}}" class="enlace">
+      Volver
+    </a>
+  </div>
+
+  <form action="/actualizarIngreso/{{ingreso._id}}" method="POST">
+
+    <label for="fechaEntrada">Fecha de entrada:</label>
+    <input type="text" name="fechaEntrada" value="{{ingreso.fechaEntrada}}" placeholder="0000-00-00  año/mes/día">
+
+    <label for="fechaSalida">Fecha de salida:</label>
+    <input type="text" name="fechaSalida" value="{{ingreso.fechaSalida}}" placeholder="0000-00-00  año/mes/día">
+
+    <label for="orden">Órden de trabajo:</label>
+    <input type="text" name="orden" value="{{ingreso.orden}}" placeholder="00000000-0000-0P-00000">
+
+    <label for="sintomas">Síntomas:</label>
+    <textarea rows="5" cols="60" name="sintomas" type="text" tabindex="0">{{ingreso.sintomas}}</textarea>
+
+    <input type="submit" value="Actualizar ingreso">
+
+    {{#if message}}
+    <div class="error-message">{{message}}</div>
+    {{/if}}
+
+  </form>
+
+</div>

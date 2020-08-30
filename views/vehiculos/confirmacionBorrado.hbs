@@ -1,0 +1,43 @@
+<div class="main-view-container">
+
+  {{#if vehiculo}}
+  <div class="contenedor-texto">
+    <p>¿Seguro que quieres eliminar el vehículo con matrícula {{vehiculo.matricula}}?</p>
+  </div>
+  <div class="enlaces-inferiores">
+    <a href="/infoVehiculo/{{vehiculo._id}}" class="enlace">No</a>
+    <a href="/borrarVehiculo/{{vehiculo._id}}" class="enlace-borrar">Sí</a>
+  </div>
+  {{/if}}
+
+  {{#if ingreso}}
+  <div class="contenedor-texto">
+    <p>¿Seguro que quieres eliminar el ingreso con fecha {{ingreso.fechaEntrada}}?</p>
+  </div>
+  <div class="enlaces-inferiores">
+    <a href="/infoIngreso/{{ingreso._id}}" class="enlace">No</a>
+    <a href="/borrarIngreso/{{ingreso._id}}" class="enlace-borrar">Sí</a>
+  </div>
+  {{/if}}
+
+  {{#if tarea}}
+  <div class="contenedor-texto">
+    <p>¿Seguro que quieres eliminar esta tarea?</p>
+  </div>
+  <div class="enlaces-inferiores">
+    <a href="/infoTarea/{{tarea._id}}" class="enlace">No</a>
+    <a href="/borrarTarea/{{tarea._id}}" class="enlace-borrar">Sí</a>
+  </div>
+  {{/if}}
+
+  {{#if repuesto}}
+  <div class="contenedor-texto">
+    <p>¿Seguro que quieres eliminar el repuesto con noc {{repuesto.noc}}?</p>
+  </div>
+  <div class="enlaces-inferiores">
+    <a href="/mostrarRepuestos/{{ingresoSeleccionado._id}}" class="enlace">No</a>
+    <a href="/borrarRepuesto/{{repuesto._id}}" class="enlace-borrar">Sí</a>
+  </div>
+  {{/if}}
+
+</div>

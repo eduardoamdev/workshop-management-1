@@ -1,0 +1,39 @@
+<div class="main-view-container">
+
+  <div class="enlaces-superiores">
+    <a href="/actualizarTarea/{{tarea._id}}" class="enlace">
+      Actualizar tarea
+    </a>
+    <a href="/mostrarTareas/{{ingreso._id}}" class="enlace">
+      Ver tareas de este ingreso
+    </a>
+    <a href="/confirmacionBorradoTarea/{{tarea._id}}" class="enlace-borrar">
+      Borrar tarea
+    </a>
+  </div>
+
+  <div class="contenedor-tabla">
+    <table>
+      <caption>
+        <p>Información de la tarea:</p>
+      </caption>
+      <tr>
+        <td>
+          <p>Descripción:</p>
+        </td>
+        <td>
+          <p class="valor-tabla">{{tarea.descripcion}}</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>Obsevaciones:</p>
+        </td>
+        <td>
+          <p class="valor-tabla-largo">{{tarea.observaciones}}</p>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+</div>

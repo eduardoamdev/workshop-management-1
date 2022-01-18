@@ -32,6 +32,12 @@ Handlebars:
 
 Dentro de este proyecto tendrá una importancia vital Handlebars. Este módulo es un motor de renderizado de plantillas que nos va a permitir realizar los renderizados desde nuestro back-end.
 
+## Cómo arrancar este proyecto:
+
+Para poner en marcha el proyecto debemos disponer de una base de datos local o remota cuya conexión pasar como argumento del método connect de mongoose y definir el puerto en el que vamos a arrancar la aplicación.
+
+Tanto la conexión con la base de datos como el puerto los podemos guardar en un archivo .env cuyo contenido requeriremos cuando lo necesitemos.
+
 ## ¿Qué me ha aportado este proyecto?
 
 Tengo bastante cariño a este proyecto, ya que fue el primer proyecto que desarrollé para ser utilizado directamente por terceras personas. La aplicación en sí es funcional, ya que me he centrado en que todo funcione de manera robusta, y en lo que respecta a los estilos, he tratado de que fueran conrrectos y contribuyeran a una crear una buena experiencia de usuario.

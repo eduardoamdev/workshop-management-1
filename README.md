@@ -2,9 +2,9 @@
 
 ## Descripción:
 
-Este sitio web fue mi primer proyecto desarrollado de manera íntegra con idea de ser desplegado en un servidor local y se trata de una aplicación de gestión en la que los trabajadores de un taller pueden introducir en qué equipos están trabajando, buscar órdenes de trabajo, tareas, actualizar y borrar información.
+Este proyecto está siendo utilizado en red local por la Agrupación Sanitaria número 3 de Zaragoza y es una mejora una mejora de "Workshop-management-1" ya que incluye ciertas tareas automatizadas y avisa al usuario de manera de ciertos eventos con una frecuencia que puede ser programada directamente.
 
-Fue creado para ser utilizado en red local por la Agrupación De Apoyo Logístico número 41 de Zaragoza.
+Consiste en una aplicación que permite gestionar órdenes de trabajo en un taller y, además, programar revisiones para fechas determinadas.
 
 ## Tecnologías empleadas:
 
@@ -28,9 +28,13 @@ El software mediante el cual nos comunicamos con la base de datos es Mongoose. E
 
 Para crear y gestionar variables de entorno empleamos Dotenv. Con este módulo podremos, mediante la creación de un archivo .env, generar variables de entorno que se encontrarán en el global scope de nuestro proyecto.
 
-Handlebars:
+### Handlebars:
 
 Dentro de este proyecto tendrá una importancia vital Handlebars. Este módulo es un motor de renderizado de plantillas que nos va a permitir realizar los renderizados desde nuestro back-end.
+
+### MomentJS:
+
+MomentJS es la librería que nos facilita un labor en ocasiones tan compleja como la gestión de fechas, algo de gran importancia dentro de este proyecto.
 
 ## Cómo arrancar este proyecto:
 
@@ -40,6 +44,6 @@ Tanto la conexión con la base de datos como el puerto los podemos guardar en un
 
 ## ¿Qué me ha aportado este proyecto?
 
-Tengo bastante cariño a este proyecto, ya que fue el primer proyecto que desarrollé para ser utilizado directamente por terceras personas. La aplicación en sí es funcional, ya que me he centrado en que todo funcione de manera robusta, y en lo que respecta a los estilos, he tratado de que fueran conrrectos y contribuyeran a una crear una buena experiencia de usuario.
-También tengo de decir que esta aplicación fue mi primera experiencia montando un servidor en Rapsberry Py y trabajando con Ubuntu server y el protocolo SSH.
-Por todo ello considero que esto considero que esta aplicación fue mi despegue como desarrollador, ya que me hizo solucionar múltiples problemas, adaptarme a las necesidades del cliente y aprender a montar servidores lo cual era algo completamente nuevo para mí.
+Este proyecto me aportó nuevos conocimientos como pueden ser lo relativo al trabajo con fechas y la utilización de fuentes importadas para mis estilos CSS. También tengo que recarcar que tanto con este proyecto como con el anterior, Workshop management 1, aprendí mucho acerca de trabajo con servidores ya que ambos se encuentran desplegados en una Rapsberry Py funcionando de manera local. Para manejar la Rapsberry Py le instalé ubuntu server como sistema operativo y tranferí los datos mediante el protocolo SSH.
+
+No hacía tanto que había salido de mi formación cuando decidí embarcarme en estos proyectos y tengo que decir que han supuesto un reto importante y me han ayudado a consolidar y ampliar todos los conocimientos adquiridos previamente.

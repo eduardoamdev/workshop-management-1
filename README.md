@@ -1,5 +1,7 @@
 # Workshop Management 1
 
+<img src="./hbs.node.express.png" alt="handlebars-node-express" />
+
 ## Descripción:
 
 Este sitio web fue mi primer proyecto desarrollado de manera íntegra con idea de ser desplegado en un servidor local y se trata de una aplicación de gestión en la que los trabajadores de un taller pueden introducir en qué equipos están trabajando, buscar órdenes de trabajo, tareas, actualizar y borrar información.
